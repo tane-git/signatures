@@ -1,13 +1,8 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 
+// import components here
 import Header from './Header'
-import ErrorMessage from './ErrorMessage'
-import Cart from './Cart'
-import ProductList from './ProductList'
-import OrderList from './OrderList'
-import WaitIndicator from './WaitIndicator'
-import Admin from './Admin'
 
 // what is history???
 
@@ -15,7 +10,7 @@ function App () {
   return (
     <div className='app'>
       <Route path='/' component={Header} />
-      <Route path='/' component={ErrorMessage} />
+      {/* <Route path='/' component={ErrorMessage} />
       <Route exact path='/' render={({ history }) => {
         return <ProductList history={history}>
           <WaitIndicator />
@@ -35,7 +30,7 @@ function App () {
         return <Admin history={history}>
           <WaitIndicator />
         </Admin>
-      }} />
+      }} /> */}
     </div>
   )
 }
